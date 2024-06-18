@@ -1,0 +1,39 @@
+{
+  "name": "simulation-1-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build",
+    "predeploy": "npm run export",
+    "deploy": "touch out/.nojekyll && gh-pages -d out"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.3",
+    "js-cookie": "^3.0.5",
+    "next": "14.2.4",
+    "pandas-js": "^0.2.4",
+    "react": "^18",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18",
+    "recoil": "^0.7.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.5.0",
+    "eslint-config-next": "14.2.4",
+    "eslint-plugin-tailwindcss": "^3.17.3",
+    "gh-pages": "^6.1.1",
+    "postcss": "^8.4.38",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,38 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dodane globalne style */
+body {
+  @apply bg-gray-100 text-gray-900; /* Ustawienie tła i koloru tekstu */
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+input {
+  @apply bg-white text-gray-900; /* Ustawienie tła i koloru tekstu dla inputów */
+  border: 1px solid #d1d5db; /* Dodanie delikatnego szarego obramowania */
+}
+
+label span {
+  @apply text-gray-800; /* Ustawienie koloru tekstu dla label */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, button {
+  margin-top: 10px;
+}
